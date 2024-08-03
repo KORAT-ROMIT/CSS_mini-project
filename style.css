@@ -5,27 +5,27 @@
 }
 .main_box{
     background: url("poto.jpg");
-    height: 100vh;    /* "vh" se hmara div johota he vo full screen me aajata he.*/
+    height: 100vh;    
     background-size: cover  ;  
 }
 .btn_one i{
     color: white;
     font-size: 30px ;
     font-weight: 700;
-    position: absolute;  /* "absolute" means vo item apne parent ke hisab se chang hogi jese ki "i" ka perent "btn_one" he.*/
+    position: absolute;  /* "absolute" means ye item apne parent ke hisab se change hoga. */
     left: 16px;
     line-height: 60px;
-    cursor: pointer;  /*pointer means arrow ke jga par jo "hath" jese aata he vo aajayega to ye btn_one ke andar likha he to jab btn_one par arrow aayega tab vo "hath" jesa ho jayega.*/
-    transition: all 0.3s linear ;  /* linear means jo action hota he vo kai bar atak ke hota he par "linear" ki madad se vo continue action karega. */
+    cursor: pointer;  /* "cursor:pointer"  means arrow me se "heand-arrow" ban jayega.*/
+    transition: all 0.3s linear ;  
 }
 .sidebar_menu{
-    position: fixed;  /* "fixed" means vo item ya div johevo vo kisi par bhi depandent nhi rehta vo fixed he vo jo ham web page dekhte he vo us position par fixed he.*/
-    left: -300px; /* is ka means left se -300px means vo page ke left se bhar chala jayega.*/
+    position: fixed;  /* "fixed" means ye jo item he vo apne web-page ke hisab se change hoga. */
+    left: -300px; 
     height: 100vh;
     width: 300px;
-    background-color:rgba(255, 255, 255, 0.1) ;  /* "rgba" me "a" means vo color ko aapko kitna visioble bnana he.   */ 
-    box-shadow: 0 0 6px rgba(255, 255, 255, 0.5);   /* box-shadow me 3 value di jati he usme #1 right baju usme defain karti he ki color kitna jyada hona chahiye or #2 niche ki ye defain karti he kitna color hona chahiye or #3 vo defain karti he ki shadow ki width kitni hogi. */
-    transition: all 0.3s linear ;
+    background-color:rgba(255, 255, 255, 0.1) ;  
+    box-shadow: 0 0 6px rgba(255, 255, 255, 0.5); 
+    transition: all 0.3s linear ;    /* "liner" se koi condition chal rhi hoto vo condition khatam hogi to vo atke gi nhi continuas chalegi. */
 }
 
 .sidebar_menu .logo{

@@ -1,0 +1,127 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+}
+.main_box{
+    background: url("poto.jpg");
+    height: 100vh;    /* "vh" se hmara div johota he vo full screen me aajata he.*/
+    background-size: cover  ;  /*isse image johevo puri dikhegi.*/
+}
+.btn_one i{
+    color: white;
+    font-size: 30px ;
+    font-weight: 700;
+    position: absolute;  /* "absolute" means vo item apne parent ke hisab se chang hogi jese ki "i" ka perent "btn_one" he.*/
+    left: 16px;
+    line-height: 60px;
+    cursor: pointer;  /*pointer means arrow ke jga par jo "hath" jese aata he vo aajayega to ye btn_one ke andar likha he to jab btn_one par arrow aayega tab vo "hath" jesa ho jayega.*/
+    transition: all 0.3s linear ;  /* linear means jo action hota he vo kai bar atak ke hota he par "linear" ki madad se vo continue action karega. */
+}
+.sidebar_menu{
+    position: fixed;  /* "fixed" means vo item ya div johevo vo kisi par bhi depandent nhi rehta vo fixed he vo jo ham web page dekhte he vo us position par fixed he.*/
+    left: -300px; /* is ka means left se -300px means vo page ke left se bhar chala jayega.*/
+    height: 100vh;
+    width: 300px;
+    background-color:rgba(255, 255, 255, 0.1) ;  /* "rgba" me "a" means vo color ko aapko kitna visioble bnana he.   */ 
+    box-shadow: 0 0 6px rgba(255, 255, 255, 0.5);   /* box-shadow me 3 value di jati he usme #1 right baju usme defain karti he ki color kitna jyada hona chahiye or #2 niche ki ye defain karti he kitna color hona chahiye or #3 vo defain karti he ki shadow ki width kitni hogi. */
+    transition: all 0.3s linear ;
+}
+
+.sidebar_menu .logo{
+    position: absolute;
+    width: 100%;
+    line-height: 60px;
+    box-shadow: 0 2px 6px rgba(255, 255, 255, 0.5);
+    height:60px ;
+}
+.sidebar_menu .logo a{
+    position: absolute;
+    left: 50px;
+    color: white;
+    text-decoration:none ;
+    font-size: 20px;
+    font-weight:500;
+
+}
+
+.sidebar_menu .menu{
+   position: absolute;
+   width: 100%;
+   top:80px ;
+
+}
+
+.sidebar_menu .btn_two i{
+    color: gray;
+    font-size: 25px ;
+    position: absolute;
+    left: 250px;
+    line-height: 60px;
+    opacity:0;  /* "opacity" means jo item ya div ya kuch bhi unki visioblity control karti he. */
+    cursor: pointer; 
+    transition: all 0.3s linear ;
+}
+
+.sidebar_menu .menu li{
+    margin-top: 6px ;
+    padding:14px 20px ;
+}
+
+.sidebar_menu .menu i,a{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.sidebar_menu .menu i{
+    padding-right: 8px;
+}
+
+.sidebar_menu .social_media{
+    position: absolute;
+    left: 25%;
+    bottom: 50px;
+
+}
+
+.sidebar_menu .social_media i{
+    color:white ;
+    opacity: 0.5;
+    padding: 0 5px;
+}
+
+#check{
+    display: none;
+}
+.sidebar_menu .menu li:hover{
+    box-shadow: 0 0 4px rgba(255, 255, 255, 0.5);
+}
+
+.btn_one i:hover{
+    font-size: 40px;
+}
+
+.btn_two i:hover{
+    font-size: 30px;
+}
+
+.sidebar_menu .social_media i:hover{
+        opacity: 1;
+        transform: scale(1.1);  /* "scale" means jo item ya div ya kuch bhi ho usko bda ya chota karne ke liye use hota he.  */
+}
+
+#check:checked ~ .sidebar_menu{
+    left: 0;
+
+}
+
+#check:checked ~ .btn_one{
+    opacity: 0;
+
+}
+
+#check:checked ~ .sidebar_menu .btn_two i{
+    opacity: 1;    
+
+}

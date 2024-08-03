@@ -6,7 +6,7 @@
 .main_box{
     background: url("poto.jpg");
     height: 100vh;    /* "vh" se hmara div johota he vo full screen me aajata he.*/
-    background-size: cover  ;  /*isse image johevo puri dikhegi.*/
+    background-size: cover  ;  
 }
 .btn_one i{
     color: white;
